@@ -86,7 +86,7 @@
     <script>
       extractData().then(
         //Display Patient Demographics and Observations if extractData was success
-        <a onclick="window.open('google.com', '_blank', 'location=yes,height=570,width=520,scrollbars=yes,status=yes');">Share Page</a>
+        window.open('https://www.google.com', '_blank');
         function(p) {
           drawVisualization(p);
         },
