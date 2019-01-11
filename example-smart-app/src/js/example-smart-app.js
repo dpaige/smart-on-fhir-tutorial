@@ -60,7 +60,7 @@
           p.hdl = getQuantityValueAndUnit(hdl[0]);
           p.ldl = getQuantityValueAndUnit(ldl[0]);
           
-          console.log('***** 12:09 update.... ******');
+          console.log('***** 12:18 PM update.... ******');
           
           var baseUrl = 'https://philips-demo.imagemovermd.com/'
           
@@ -73,6 +73,8 @@
           };
             
           p.mrn = patient.id;
+          
+          console.dir(p);
           
           p.dob = p.birthdatereplace(/-/g, '');
           
