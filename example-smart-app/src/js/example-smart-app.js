@@ -60,7 +60,7 @@
           p.hdl = getQuantityValueAndUnit(hdl[0]);
           p.ldl = getQuantityValueAndUnit(ldl[0]);
           
-          console.log('***** 12:35 PM update.... ******');
+          console.log('***** 02:01 PM update.... ******');
           
           var baseUrl = 'https://philips-demo.imagemovermd.com/'
           
