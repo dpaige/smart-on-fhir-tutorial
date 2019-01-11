@@ -61,9 +61,7 @@
           p.ldl = getQuantityValueAndUnit(ldl[0]);
 
           console.log('******* start of test ********');
-          for(var b in window) { 
-            if(window.hasOwnProperty(b)) console.log(b); 
-          };
+          console.dir(p);
           console.log('******* end of test ********');
           
           ret.resolve(p);
