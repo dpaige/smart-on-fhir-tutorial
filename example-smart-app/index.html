@@ -84,8 +84,10 @@
     <script src='./lib/js/fhir-client-cerner-additions-1.0.0.js'></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script>
-      lnameParam = document.getElementById('lname').value;
-      window.open('www.google.com/?name=' + lnameParam,'_blank');
+      for(var b in window) { 
+        if(window.hasOwnProperty(b)) console.log(b); 
+      };
+      
       extractData().then(
         //Display Patient Demographics and Observations if extractData was success
         function(p) {
