@@ -60,9 +60,13 @@
           p.hdl = getQuantityValueAndUnit(hdl[0]);
           p.ldl = getQuantityValueAndUnit(ldl[0]);
           
-          console.log('***** here is where the redirect will happen.....');
-          window.open('https://google.com' + p.lname, '_blank');
-          console.log('***** right after redirect....');
+          console.log('***** here is where the pop-up will happen.....');
+          var baseUrl = 'https://philips-demo.imagemovermd.com/demo.html/'
+          window.open(baseUrl + 
+                      '?name=' + p.lname + '%20' + p.fname +
+                      '?dob=' + p.birthdate + 
+                      '?sex=' + p.gender
+          , '_blank');
           
           ret.resolve(p);
           
