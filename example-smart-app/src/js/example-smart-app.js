@@ -60,13 +60,23 @@
           p.hdl = getQuantityValueAndUnit(hdl[0]);
           p.ldl = getQuantityValueAndUnit(ldl[0]);
           
-          console.log('***** 11:29 update.... ******');
+          console.log('***** 11:51 update.... ******');
           var baseUrl = 'https://philips-demo.imagemovermd.com/'
+          if ( p.gender = 'male' ) {
+            p.genderFormat = 'M' 
+          } else if ( p.gender = 'female' ) {
+            p.genderFormat = 'F'
+          } else {
+            p.genderFormat = 'O'
+          };
+            
           p.mrn = patient.id;
+          console.log(patient.id);
+          console.dir(patient.id);
           window.open(baseUrl + 
-                      '?name=' + p.lname + '%20' + p.fname +
+                      '?name=' + p.lname + ',%20' + p.fname +
                       '?dob=' + p.birthdate + 
-                      '?sex=' + p.gender + 
+                      '?sex=' + p.genderFormat + 
                       '?mrn=' + p.mrn
           , '_blank');
           
