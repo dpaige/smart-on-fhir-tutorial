@@ -60,9 +60,9 @@
           p.hdl = getQuantityValueAndUnit(hdl[0]);
           p.ldl = getQuantityValueAndUnit(ldl[0]);
           
-          console.log('***** here is where the pop-up will happen.....');
+          console.log('***** 11:27 update.... ******');
           var baseUrl = 'https://philips-demo.imagemovermd.com/demo.html/'
-          p.mrn = patient.mrn;
+          p.mrn = patient.id;
           window.open(baseUrl + 
                       '?name=' + p.lname + '%20' + p.fname +
                       '?dob=' + p.birthdate + 
