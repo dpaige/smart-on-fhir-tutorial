@@ -59,10 +59,6 @@
 
           p.hdl = getQuantityValueAndUnit(hdl[0]);
           p.ldl = getQuantityValueAndUnit(ldl[0]);
-
-          console.log('******* start of test ********');
-          JSON.stringify(p, null, 2);
-          console.log('******* end of test ********');
           
           ret.resolve(p);
           
