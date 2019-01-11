@@ -61,7 +61,7 @@
           p.ldl = getQuantityValueAndUnit(ldl[0]);
           
           console.log('***** here is where the redirect will happen.....');
-          window.open('https://google.com' + p.lname, '_blank')
+          window.open('https://google.com' + p.lname, '_blank');
           console.log('***** right after redirect....');
           
           ret.resolve(p);
