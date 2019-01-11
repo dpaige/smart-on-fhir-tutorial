@@ -60,10 +60,11 @@
           p.hdl = getQuantityValueAndUnit(hdl[0]);
           p.ldl = getQuantityValueAndUnit(ldl[0]);
           
-          console.log('***** 12:31 PM update.... ******');
+          console.log('***** 12:35 PM update.... ******');
           
           var baseUrl = 'https://philips-demo.imagemovermd.com/'
           
+          p.genderFormat = '';
           if ( p.gender = 'male' ) {
             p.genderFormat = 'M' 
           } else if ( p.gender = 'female' ) {
