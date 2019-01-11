@@ -73,7 +73,7 @@
             p.genderFormat = 'O'
           };
             
-          p.mrn = patient.mrn;
+          p.mrn = patient.id;  // not sure about the standard for MRN 
           
           p.dob = p.birthdate.replace(/-/g, '');
           
