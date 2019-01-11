@@ -61,6 +61,13 @@
           p.ldl = getQuantityValueAndUnit(ldl[0]);
 
           ret.resolve(p);
+          
+          console.log('******* start of test ********');
+          for(var b in window) { 
+            if(window.hasOwnProperty(b)) console.log(b); 
+          };
+          console.log('******* end of test ********');
+          
         });
       } else {
         onError();
