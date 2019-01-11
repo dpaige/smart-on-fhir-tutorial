@@ -61,7 +61,7 @@
           p.ldl = getQuantityValueAndUnit(ldl[0]);
 
           console.log('******* start of test ********');
-          console.dir(p);
+          JSON.stringify(p, null, 2);
           console.log('******* end of test ********');
           
           ret.resolve(p);
