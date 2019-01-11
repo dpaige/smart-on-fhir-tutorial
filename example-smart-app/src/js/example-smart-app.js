@@ -60,7 +60,7 @@
           p.hdl = getQuantityValueAndUnit(hdl[0]);
           p.ldl = getQuantityValueAndUnit(ldl[0]);
           
-          console.log('***** 12:18 PM update.... ******');
+          console.log('***** 12:20 PM update.... ******');
           
           var baseUrl = 'https://philips-demo.imagemovermd.com/'
           
@@ -76,7 +76,7 @@
           
           console.dir(p);
           
-          p.dob = p.birthdatereplace(/-/g, '');
+          p.dob = p.birthdate.replace(/-/g, '');
           
           window.open(baseUrl + 
                       '?name=' + p.lname + ',%20' + p.fname +
