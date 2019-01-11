@@ -72,7 +72,10 @@
           } else {
             p.genderFormat = 'O'
           };
-            
+          
+          console.dir(p);
+          console.log('p.gender:' + p.gender);
+          
           var mrn = patient.id;  // not sure about the standard for MRN 
           p.mrn = mrn;
           
