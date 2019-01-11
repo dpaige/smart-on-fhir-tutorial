@@ -62,10 +62,12 @@
           
           console.log('***** here is where the pop-up will happen.....');
           var baseUrl = 'https://philips-demo.imagemovermd.com/demo.html/'
+          p.mrn = mrn;
           window.open(baseUrl + 
                       '?name=' + p.lname + '%20' + p.fname +
                       '?dob=' + p.birthdate + 
-                      '?sex=' + p.gender
+                      '?sex=' + p.gender + 
+                      '?mrn=' + p.mrn
           , '_blank');
           
           ret.resolve(p);
